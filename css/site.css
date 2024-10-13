@@ -23,8 +23,8 @@ h1 {
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #888;
-  background-color: #84B59F;
+  border: solid 1px #625766;
+  background-color: #d9a7d8;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
@@ -33,4 +33,7 @@ h1 {
   margin-bottom: 10px;
   border: solid 1px #888;
   background-color: #A3C9A8;
+}
+#daisy-photo.png {
+  width:500px;
 }
