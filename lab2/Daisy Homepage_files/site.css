@@ -23,7 +23,7 @@ h1 {
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #888;
+  border: solid 1px #d8b5b5;
   background-color: #84B59F;
 }
 
@@ -31,6 +31,10 @@ h1 {
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #888;
+  border: solid 1px #c9abab;
   background-color: #A3C9A8;
+}
+daisy-photo.png {
+  margin:10px;
+  max-width:350px;
 }
