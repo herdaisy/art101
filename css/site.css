@@ -34,6 +34,7 @@ h1 {
   border: solid 1px #8cc8c5;
   background-color: #58889d;
 }
-#daisy-photo.png {
+.daisy-photo.png{
+  margin: 10;
   width:300px;
 }
