@@ -10,13 +10,13 @@ functionsortUsername()
   console.log ("userName =", userName);
   //split string to arry
   var nameArry=userName.split('');
-  console.log("nameArray.sort=", nameArraySort);
-  //split string to arry
+  console.log("nameArray.sort=", nameArray);
+  //sport string to arry
   var nameArraySort= nameArray.sort();
   //join array back to a string
   var namesorted=nameArraysort.join('')
   console.log("namesorted=", namesorted);
-  //userName.tolower(). Split(" ").sort().join("")
+  //userName.tolower(). Split("").sort().join("")
   return namesorted;
 
   //output 
