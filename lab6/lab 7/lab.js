@@ -2,11 +2,12 @@
 // Author: Daisy Herrera
 // Date: 10/17/24
 
+
 // sortUserName-a function that takes user input and sorts the letters
 //of their name 
-function sortname() 
-  Var userName=window.prompt("Hello.");
-  console.log ("userName=", userName);
+functionsortUsername() 
+  Var userName = window.prompt("Hello.");
+  console.log ("userName =", userName);
   //split string to arry
   var nameArry=userName.split('');
   console.log("nameArray.sort=", nameArraySort);
@@ -19,5 +20,5 @@ function sortname()
   return namesorted;
 
   //output 
-  document.written("Daisy": ",
+  document.written("Daisy:",
     sortUserName(),"</br>"); 
