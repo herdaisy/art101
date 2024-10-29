@@ -23,6 +23,6 @@ function SortUsername() {
 }
 function displaysortedName () {
   let result= sortusename ();
-  document.getElementById("output").innerHTML='<p>I fixed your name: <strong>${result}</strong<>/p>;
+  document.getElementById("output").innerHTML='<p>I fixed your name: <strong>${result}</strong<>/p>';
   }
-  window.onload=displaysortedName;
+  window.onload=displaySortedName;
