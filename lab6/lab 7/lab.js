@@ -1,12 +1,13 @@
 // index.js - purpose and description here
 // Author: Daisy Herrera
-// Date: 10/17/24
+// Date: 10/26/24
 
 
 // sortUserName-a function that takes user input and sorts the letters
 //of their name 
 functionsortUsername() 
-  Var userName = window.prompt("Hello.");
+if (!sortName)    
+  var userName = window.prompt("Hi, please type in your full name so I can fix it.");
   console.log ("userName =", userName);
   //split string to arry
   var nameArry=userName.split('');
@@ -20,5 +21,4 @@ functionsortUsername()
   return namesorted;
 
   //output 
-  document.written("Daisy:",
-    sortUserName(),"</br>"); 
+  document.written("oh hey, I've fixed your name:", sortUserName(),"</br>"); 
