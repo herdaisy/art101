@@ -15,13 +15,13 @@ function sortUsername() {
   console.log("nameArrySort=", nameArraySort);
 
    // Array back to a string
-   var namesorted=nameArraysort.join('');
+   var namesorted=nameArraySort.join('');
    console.log("namesorted=", namesorted);
  
    return "Your sorted names is: " + namesorted;
  }
  function displaysortedName () {
-   let result= sortusename ();
-   document.getElementById("output").innerHTML='<p>I fixed your name: <strong>${result}</strong></p>';
+   let result= sortUsername ();
+   document.getElementById("output").innerHTML="<p>I fixed your name: <strong>${result}</strong></p>";
 }
 window.onload=displaySortedName;
