@@ -1,33 +1,18 @@
 
+/*
+lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
 
-return 
-    
-<html> 
-<head/>
+Requirements: jQuery must be loaded for this script to work.
 
-   /<meta charset="UTF-8"/>
-   <meta name="viewport" content="width=device-width,inital-scale=1.0"/>
- 
-    <title> Lab 9=Libraries & jQuery </title>
-    <link rel="stylesheet" type="text/css" href="../css/site.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
-<head/>
+Author: Wes Modes
+Date: 2024
+*/
 
-<body>
+//add button to challenge section 
+S("#challenge").append("<button id=button-challenge'>Make Special</button>");
 
-<div id="challenge">
-   <p>There are more steps involved that have made the assignments harder, I find myself troubleshooting more</p>
- </div>
-
-<div id = "problems">
-   <p>I am having problems trying to figure out how to run it smoothly</p>
- </div>
-
-<div id = "results">
-   <p>Overall, I tried my best to figure out the issues and follow the prompt the best I could </p>
-   </div>
-   </body>
-   </html>
-;
-
+//add a click listener to the challenge button 
+S("button-challenge").click(function(){
+    //now ad (or subtract) "the special" class to the section
+    $("#challenge").toggleClass("special");
+});
