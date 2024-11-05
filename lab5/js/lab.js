@@ -10,10 +10,6 @@ Model="mini cooper"
 Color="beige"
 year= 2013;
 
-// calculate 
-age= 2013-year 
-
-
 //calculate
 age= 2024 - year;
 
