@@ -16,3 +16,8 @@ function generateRandomText() {
     //Generate the random Lorem Ispsum-like text
     return text.slice(randstart,randStart+ randlen);
 }
+
+//click listener for button 
+const newTest = generateRandomTest ();
+//append a new to our output div
+$("#output").append('<div class="text"><p' + newTest + '</p></div>');
