@@ -17,6 +17,11 @@ function generateRandomText() {
     return text.slice(randStart,randStart+ randlen);
 }
 
+//click listner for button
+$("#make-convo").click(function(){
+
+});
+
 //get new fake dialogue
 const newTest = generateRandomText();
 //append a new to our output div
