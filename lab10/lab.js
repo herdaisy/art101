@@ -7,17 +7,17 @@ Date:2024
 */
 
 function generateRandomText() {
-    const text = "Lorem pop"
+    const text = "Lorem pop.";
     const min= 3;
     const max=100;
     const randlen= Math.floor(math.random()* (max-min+1))+ min;
     //Get a random starting index to slice the Lorem Ispsum text
-    const randStart= Math.floor(Math.random()* (text.length-ranelen+1));
+    const randStart= Math.floor(Math.random()* (text.length-randlen+1));
     //Generate the random Lorem Ispsum-like text
     return text.slice(randstart,randStart+ randlen);
 }
 
-//click listener for button 
-const newTest = generateRandomTest ();
+//get new fake dialogue
+const newTest = generateRandomTest();
 //append a new to our output div
-$("#output").append('<div class="text"><p' + newTest + '</p></div>');
+$("#output").append('<div class="text"><p>' + newTest + '</p></div>');
