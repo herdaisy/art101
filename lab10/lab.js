@@ -14,7 +14,7 @@ function generateRandomText() {
     //Get a random starting index to slice the Lorem Ispsum text
     const randStart= Math.floor(Math.random()* (text.length-randlen+1));
     //Generate the random Lorem Ispsum-like text
-    return text.slice(randstart,randStart+ randlen);
+    return text.slice(randStart,randStart+ randlen);
 }
 
 //get new fake dialogue
