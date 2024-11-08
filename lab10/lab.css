@@ -1,5 +1,19 @@
+body { 
+    background-color: aquamarine;
+}
 
-.text p {
+h1,h2,h2 {
+    font-family:sans-serif;
+}
+
+#content {
+margin:10px;
+padding:10px;
+border:solid 5px #e87c7c;
+background-color: #5566c6
+}
+
+    .text p {
     display:inline-block;
     max-width:60%;
     padding:5px 10px;
@@ -7,4 +21,9 @@
          background-color:darkcyan;
          color:rgb(152, 98, 133);
          font-family: sans-serif;
-       font-size:0.8em; }
+       font-size:0.8em; 
+    }
+    .imput {
+ color:#b55b5b 
+
+ }
