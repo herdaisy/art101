@@ -7,32 +7,26 @@ Author: Daisy Herrera
 Date: 11/14/2024
 */
 
-//return Gryffindor,Ravenclaw,Slytherin, and Huflepuff
-//depending on legth mod 4
+//return Gryffindor,Ravenclaw,Slytherin, and Huflepuff depending on legth mod 4
 
 function sortingHat(str) {
-len = str.length;
-mod = len % 4;
-if (mod == 0) {
+    let len = str.length;
+    let mod = len % 4;
+    if (mod == 0) {
         return "Gryffindor"
-}
-else if (mod == 1) {
-    return "Ravenclaw"
-}
-else if(mod == 2) {
-    return "slytherin"
-}
-
-else if(mod == 3) {
-    return"Hufflepuff"
-}
-
+    } else if (mod == 1) {
+        return "Ravenclaw"
+    } else if (mod == 2) {
+        return "Slytherin"
+    } else if (mod == 3) {
+        return "Hufflepuff"
+    }
 }
 
 var myButton = document.getElementById("submit");
 myButton.addEventListener("click", function() {
-    var name = document.getElementById("imput").value;
-    var house = sortingHat(name);
-    nawText = "<p>The Sorting Hat has Sorted you into" + house + "</p>";
-    document.getElementById("output").innerHTML = newtext;
+   var name = document.getElementById("input").value;
+   var house = sortingHat(name);
+   newText = "<p>The Sorting Hat has Sorted you into" + house + "</p>";
+   document.getElementById("output").innerHTML = newText;
 })
