@@ -7,7 +7,8 @@ Author: Daisy Herrera
 Date: 11/14/2024
 */
 
-//return Gryffindor,Ravenclaw,Slytherin, and Huflepuff depending on legth mod 4
+//return Gryffindor,Ravenclaw,Slytherin, and Huflepuff 
+//depending on legth mod 4
 
 function sortingHat(str) {
     let len = str.length;
