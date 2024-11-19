@@ -4,35 +4,25 @@ lab.js - This simple JavaScript/jQuery script gets a value from an input field a
 Requirements: jQuery must be loaded for this script to work.
 
 Author: Daisy Herrera
+Data: 11/18/2024
+
+*/
 
 // Function to perform fizzbuzz-like operations with numbers 1-200.
 function fizzBuzzBoom() {
-  // Initialize an empty string to store results.
-  let oneLongString = "";
-
-  // Loop through numbers from 1 to 200.
-  for (let num = 1; num <= 200; num++) {
-    // Initialize an empty string for current number's result.
-    let str = "";
-
-    // Check if the number is divisible by various values:
-    if (num % 3 === 0) str += "Fizz";
-    if (num %5 ===0) str+="Buzz";
-  
-        if(num%7===0)str+="Boom";
-
-
-
-      else{
-        $("#output").append("<p>"+num+"</p>");
-          continue;
-      }
+    //makes a loop
+    for (let i = 1; i <= 200; i++) {
+        let output= ' ';
+    //if the number is a mulitiple of 3 outputs fizz
+    if (i % 3 === 0) output += "Fizz!";
+    //if the number is a muliple of 5 output buzz
+    if (i % 5 === 0) str+="Buzz!";
+    //if number is a multiple of 7 output boom
+     if(i % 7 === 0) output+="Boom!";
     
-     $("#output").append("<p>"+str+"!</p>");
+     $("#output").append( '<p>' + (output || i) +' </p>');
   
-
       }
 }
 
-// Call the fizzBuzzBoom function after defining it. You can move this line elsewhere in your code as long as it follows where you define the function 
 fizzBuzzBoom();
