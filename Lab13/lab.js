@@ -10,8 +10,6 @@ Data: 11/18/2024
 */
 
 
-fizzBuzzBoom();
-
 $(document).ready(function() {
     function fizzBuzz() {
         var oneLongString = ""; // Initialize an empty string to store the results
