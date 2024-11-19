@@ -8,7 +8,6 @@ Data: 11/18/2024
 
 */
 
-// Function to perform fizzbuzz-like operations with numbers 1-200.
 function fizzBuzzBoom() {
     //makes a loop
     for (let i = 1; i <= 200; i++) {
@@ -16,12 +15,12 @@ function fizzBuzzBoom() {
     //if the number is a mulitiple of 3 outputs fizz
     if (i % 3 === 0) output += "Fizz!";
     //if the number is a muliple of 5 output buzz
-    if (i % 5 === 0) str+="Buzz!";
+    if (i % 5 === 0) ouput += "Buzz!";
     //if number is a multiple of 7 output boom
-     if(i % 7 === 0) output+="Boom!";
+     if(i % 7 === 0) output += "Boom!";
     
      $("#output").append( '<p>' + (output || i) +' </p>');
-  
+     
       }
 }
 
