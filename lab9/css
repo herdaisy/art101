@@ -1,9 +1,6 @@
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+     background-color: #f4f4f4;
 }
 
 
@@ -14,39 +11,6 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-
-div {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
 .special {
     background-color: lavender;
     border: dotted 5px red;
@@ -55,12 +19,11 @@ div {
 }
 
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+#content {
+   margin: 10px;
+    padding: 10px;
+   border: solid 5px #2284bc;
+   background-color: #2284bc;
+   color:beige;
+   font-weight: bold;
 }
