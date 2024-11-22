@@ -12,11 +12,6 @@ Date: 2024
     // Add button to challenge section
     $("#challenge").append("<button id='button-challenge'>Make Special</button>");
 
-    // Add button to problems section
-    $("#problems").append("<button id='button-problems'>Make Special</button>");
-
-    // Add button to results section
-    $("#results").append("<button id='button-results'>Make Special</button>");
 
     // Add a click listener to the challenge button
     $("#button-challenge").click(function() {
