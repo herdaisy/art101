@@ -8,8 +8,6 @@ Author: Daisy Herrera
 Date: 2024
 */
 
-// Wait for the document to be ready before executing jQuery code
-$(document).ready(function() {
 
     // Add button to challenge section
     $("#challenge").append("<button id='button-challenge'>Make Special</button>");
@@ -37,5 +35,4 @@ $(document).ready(function() {
         // Toggle the "special" class to the results section
         $("#results").toggleClass("special");
     });
-})
 
