@@ -8,26 +8,12 @@ Author: Daisy Herrera
 Date: 2024
 */
 
+    //add button to challenge section 
 
-    // Add button to challenge section
-    $("#challenge").append("<button id='button-challenge'>Make Special</button>");
-
-
-    // Add a click listener to the challenge button
-    $("#button-challenge").click(function() {
-        // Toggle the "special" class to the challenge section
-        $("#challenge").toggleClass("special");
+    //add a click listener to the challenge section
+$(document).ready(function() {
+    $('#button-challenge').click(function() {
+        //Apply the 'special' class when the button is clicked 
+        $('#button-challenge').addClass('special');
     });
-
-    // Add a click listener to the problems button
-    $("#button-problems").click(function() {
-        // Toggle the "special" class to the problems section
-        $("#problems").toggleClass("special");
-    });
-
-    // Add a click listener to the results button
-    $("#button-results").click(function() {
-        // Toggle the "special" class to the results section
-        $("#results").toggleClass("special");
-    });
-
+});
