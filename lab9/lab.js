@@ -8,15 +8,34 @@ Author: Daisy Herrera
 Date: 2024
 */
 
-//add button to challenge section 
-$("#challenge").append("<button id='button-challenge'>Make Special</button>");
+// Wait for the document to be ready before executing jQuery code
+$(document).ready(function() {
 
+    // Add button to challenge section
+    $("#challenge").append("<button id='button-challenge'>Make Special</button>");
 
-//add a click listener to the challenge button 
-$("button-challenge").click(function(){
-    //now ad (or subtract) the "special" class to the section
-    $("#challenge").toggleClass("special");
-});
+    // Add button to problems section
+    $("#problems").append("<button id='button-problems'>Make Special</button>");
 
-//add button problem 
+    // Add button to results section
+    $("#results").append("<button id='button-results'>Make Special</button>");
+
+    // Add a click listener to the challenge button
+    $("#button-challenge").click(function() {
+        // Toggle the "special" class to the challenge section
+        $("#challenge").toggleClass("special");
+    });
+
+    // Add a click listener to the problems button
+    $("#button-problems").click(function() {
+        // Toggle the "special" class to the problems section
+        $("#problems").toggleClass("special");
+    });
+
+    // Add a click listener to the results button
+    $("#button-results").click(function() {
+        // Toggle the "special" class to the results section
+        $("#results").toggleClass("special");
+    });
+})
 
