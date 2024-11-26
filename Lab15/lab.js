@@ -1,27 +1,35 @@
-//using core $.ajax() method 
-$ajax({
-    //The URL for the request (from the api docs)
-    url:"https://yourapiendpoint.com/",
-    //The data to send (will be converted to a query string)
-    data:{
-            //here is where any data required by the api
-            // goes(check the api docs)
-            id:123,
-            api_key: "ballalaa",
-    },
-    //wheater this a POST or GET request
-    type:"GET",
-    //The type of data we expect back dataType: "GET",
-    //The type of data we expect back dataType: "json",
-    //what do we do when the api call is successful 
-    // all the action goes in here 
-    sucess:function(data){
-        //do stuff
-        console.log(data);
-    },
+/*
+lab.js - This simple JavaScript/jQuery script gets a value from an input field and outputs a modified version.
+
+Requirements: jquery must be loaded for this script to work.
+
+Author: Daisy 
+Date: 11/25/24
+*/
+
+
+
+$(document).ready(function() {
+    //Adding click event listener to the "Fectch data" button
+    $('#activate').click(function() {
+        //Make AJAX call to an external API
+        $.ajax({
+    url:"https://api.chucknorris.io/jokes/random/", // Example: Chuck Norris joke API
+    Type:"Get",//GET request
+    dataType:"Json",//Expecting JSON response
+
+    // On success, display the response data in the #output div
+    success: function(data){
+        console.log(data); //Log the data for debugging
     //what we do if the api call fails
-    error: function (jqXHR,textStatus) {
-        //do stuff
+    $('#output').html(data.value); //Display the joke in the output div
+    },
+        //On error,log the error to the console
+        error:function(jqXHR,textStatus,errorThrown) {
         console.log("Error:",textStatus,errorThrown);
-    }
-})
+        $('#output').html("Sorry, there was an error fetching the data.");
+       }
+   });
+  });
+}); 
+
