@@ -10,7 +10,7 @@ Date: 11/25/24
 
 
 $(document).ready(function() {
-    //Adding click event listener to the "Fectch data" button
+    //Adding click event listener to the "Fetch data" button
     $('#activate').click(function() {
         //Make AJAX call to an external API
         $.ajax({
@@ -21,8 +21,7 @@ $(document).ready(function() {
     // On success, display the response data in the #output div
     success: function(data){
         console.log(data); //Log the data for debugging
-    //what we do if the api call fails
-    $('#output').html(data.value); //Display the joke in the output div
+        $('#output').html(data.value); //Display the joke in the output div
     },
         //On error,log the error to the console
         error:function(jqXHR,textStatus,errorThrown) {
