@@ -6,7 +6,7 @@ daisy-photo.png {
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #7997d2;
 }
 
 
@@ -21,8 +21,8 @@ h1{
 }
 #content {
 margin: 10px;
-border:solid 5px #142155;
-background-color:rgb(27, 83, 158);
+border:solid 5px #45538d;
+background-color:rgb(71, 129, 229);
 }
 
 .special{
